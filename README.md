@@ -1,19 +1,16 @@
+Forked from [react-native-passcode-auth](https://github.com/naoufal/react-native-passcode-auth)
+
+# Changes not in Original Repo
+- Added podspec for iOS
+
 # React Native Passcode Auth
 
-[![npm version](https://img.shields.io/npm/v/react-native-passcode-auth.svg?style=flat-square)](https://www.npmjs.com/package/react-native-passcode-auth)
-[![npm downloads](https://img.shields.io/npm/dm/react-native-passcode-auth.svg?style=flat-square)](https://www.npmjs.com/package/react-native-passcode-auth)
+<!-- [![npm version](https://img.shields.io/npm/v/react-native-passcode-auth.svg?style=flat-square)](https://www.npmjs.com/package/react-native-passcode-auth)
+[![npm downloads](https://img.shields.io/npm/dm/react-native-passcode-auth.svg?style=flat-square)](https://www.npmjs.com/package/react-native-passcode-auth) -->
 
 React Native Passcode Auth is a [React Native](http://facebook.github.io/react-native/) library for authenticating users with iOS Passcode.  It is an excellent fallback for when [Touch ID](https://github.com/naoufal/react-native-touch-id) is not available.
 
 ![react-native-passcode-auth](https://cloud.githubusercontent.com/assets/1627824/12255178/ed7b46e2-b8be-11e5-8552-f7b60959b43c.gif)
-
-## Documentation
-- [Install](https://github.com/naoufal/react-native-passcode-auth#install)
-- [Usage](https://github.com/naoufal/react-native-passcode-auth#usage)
-- [Example](https://github.com/naoufal/react-native-passcode-auth#example)
-- [Methods](https://github.com/naoufal/react-native-passcode-auth#methods)
-- [Errors](https://github.com/naoufal/react-native-passcode-auth#errors)
-- [License](https://github.com/naoufal/react-native-passcode-auth#license)
 
 ## Install
 React Native Passcode Auth __requires iOS 9.0 or later__.
@@ -23,14 +20,18 @@ npm i --save react-native-passcode-auth
 ```
 
 ## Usage
-### Linking the Library
-In order to use Passcode Auth, you must first link the library to your project.  There's excellent documentation on how to do this in the [React Native Docs](http://facebook.github.io/react-native/docs/linking-libraries-ios.html#content).
+### Linking the Library (via Cocoa Pods)
+Add the following line to your build targets in your `Podfile`
+
+`pod 'PasscodeAuth', :path => '../node_modules/@el173/react-native-passcode-auth'`
+
+Then run `pod install`
 
 ### Requesting Passcode Authentication
 Once you've linked the library, you'll want to make it available to your app by requiring it:
 
 ```js
-import PasscodeAuth from 'react-native-passcode-auth';
+import PasscodeAuth from '@el173/react-native-passcode-auth';
 ```
 
 Requesting Passcode authentication is as simple as calling:
