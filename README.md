@@ -16,7 +16,7 @@ React Native Passcode Auth is a [React Native](http://facebook.github.io/react-n
 React Native Passcode Auth __requires iOS 9.0 or later__.
 
 ```shell
-npm i --save react-native-passcode-auth
+npm i --save @el173/react-native-passcode-auth
 ```
 
 ## Usage
